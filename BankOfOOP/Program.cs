@@ -180,13 +180,15 @@ namespace BankOfOOP
                                         { Console.WriteLine("Current savings balance: $" + tbird.Savings); }
                                         else { Console.WriteLine("Current savings balance: ($" + (tbird.Savings * -1) + ")"); }
                                     }
+                                    Console.WriteLine();
+                                    Console.WriteLine("Press Enter to continue");
                                     Console.ReadLine();
                                 }
 //-----Logout  --------------------------------------------------------------------------------------
                                 if (keyPress.Key == ConsoleKey.L)
                                 {
                                     Console.WriteLine(bank.ToString(bank.GetAccountList()[bank.aReference]));
-                                    Console.WriteLine("Good-Bye...");
+                                    Console.WriteLine("Good-Bye...\n\nPress Enter to continue");
                                     Console.ReadLine();
                                     break;
                                 }
